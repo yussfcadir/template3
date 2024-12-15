@@ -441,6 +441,7 @@ header .container .main-var .mega-menu .links li a i {
     background-color: #ececec;
     position: relative;
     overflow: hidden;
+    padding-left: 0;
 }
 .gallery::before {
     content: "";
@@ -608,11 +609,11 @@ header .container .main-var .mega-menu .links li a i {
             -o-transform: translateX(-5px);
 }
         to {
-            transform: translateX(-300px);
-            -webkit-transform: translateX(-300px);
-            -moz-transform: translateX(-300px);
-            -ms-transform: translateX(-300px);
-            -o-transform: translateX(-300px);
+            transform: translateX(-90px);
+            -webkit-transform: translateX(-90px);
+            -moz-transform: translateX(-90px);
+            -ms-transform: translateX(-90px);
+            -o-transform: translateX(-90px);
 }
     }
     @keyframes gallhovim {
