@@ -465,10 +465,7 @@ header .container .main-var .mega-menu .links li a i {
     background-color: white;
     padding: 13px;
     box-shadow: -3px 4px 8px 0px #69696966, 2px 4px 8px 0px #72717121;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+
 }
 .gallery .container .box .image {
     position: relative;
@@ -512,6 +509,128 @@ header .container .main-var .mega-menu .links li a i {
     -o-transition:var(--main-transition);
 }
 /* start gallery */
+/* start features */
+.features {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.features .container .box {
+    border: solid 1px #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.features .container .box .img-holder {
+    position: relative;
+    overflow: hidden;
+}
+.features .container .box .img-holder::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.features .Quality .img-holder::before {
+    background-color: rgb(244 64 54 / 60%);
+}
+.features .Time .img-holder::before {
+    background-color: rgb(0 150 136 / 60%);
+}
+.features .Passion .img-holder::before {
+    background-color: rgb(3 169 244 / 60%);
+}
+.features .container .box .img-holder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -11px;
+    width: 0px;
+    height: 0px;
+    border-width: 0px 365px 160px 365px;
+    border-color: transparent #00000000 white #66339900;
+    border-style: solid;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.features .container .box:hover .img-holder::after {
+    border-width: 0px 365px 160px 5px;
+}
+
+.features .box .img-holder img {
+    max-width: 100%;
+}
+.features .container .box h2 {
+    font-size: 1.8rem;
+    position: relative;
+}
+.features .container .box p {
+    padding: 50px 20px;
+    line-height: 1.7;
+    color: #777;
+    font-size: 1.2rem;
+}
+.features .container .box.Quality a {
+    border-color: #f44036;
+    color: #f44036;
+    background-image: linear-gradient(to right,  #f44036 50%,transparent 50%);
+}
+.features .container .box.Time a {
+    border-color: #009688;
+    color: #009688;
+    background-image: linear-gradient(to right,  #009688 50%,transparent 50%);
+}
+.features .container .box.Passion a {
+    border-color: #03a9f4;
+    color: #03a9f4;
+    background-image: linear-gradient(to right,  #03a9f4 50%,transparent 50%);
+}
+
+.features .container .box:hover a {
+    background-position: bottom left;
+    color: white;
+}
+
+.features .container .box a {
+    margin-bottom: 42px;
+    border: solid 3px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 23px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-image: linear-gradient(to right,  #03a9f4 50%,transparent 50%);
+    background-position: right bottom;
+    background-size: 200px 100px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+/* end features */
 /* start animation */
 @keyframes land {
         0% {
